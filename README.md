@@ -13,7 +13,7 @@ The following components are currently in development:
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/project-repo.git
+git clone https://github.com/Sudhu2004/PersonelPortfolio.git
 
 # Navigate to the directory
 cd project-repo
