@@ -1,0 +1,119 @@
+.section {
+    padding: 4rem 2rem;
+    min-height: 80vh;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: linear-gradient(to right, #fff, #aaa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.edu-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.edu-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.2rem;
+    color: #fff;
+}
+
+.degree {
+    color: #2575fc;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+}
+
+.dates {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.link-icon {
+    margin-left: auto;
+    color: #aaa;
+    transition: color 0.3s;
+}
+
+.link-icon:hover {
+    color: #fff;
+}
+
+.courses-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: 0;
+}
+
+.courses-container.expanded {
+    max-height: 500px;
+    /* Arbitrary large height */
+    opacity: 1;
+    margin-top: 1rem;
+    padding-top: 1rem;
+}
+
+.courses-container h4 {
+    margin-bottom: 0.5rem;
+    color: #ccc;
+}
+
+.courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.courses-list li {
+    background: rgba(106, 17, 203, 0.2);
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    border: 1px solid rgba(106, 17, 203, 0.3);
+}
+
+.expand-hint {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.edu-card-wrapper {
+    cursor: pointer;
+}

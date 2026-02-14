@@ -1,0 +1,84 @@
+.section {
+    padding: 4rem 2rem;
+    min-height: 80vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.leader-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.leader-info h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.org {
+    color: #ff4b2b;
+    font-weight: 500;
+}
+
+.leader-icon {
+    font-size: 2rem;
+    color: #ff4b2b;
+    opacity: 0.3;
+}
+
+.description-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.description-container.expanded {
+    max-height: 300px;
+    opacity: 1;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.cert-link {
+    color: #ff4b2b;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.expand-hint {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.leader-card {
+    cursor: pointer;
+}

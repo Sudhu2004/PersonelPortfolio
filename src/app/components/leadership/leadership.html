@@ -1,0 +1,28 @@
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Leadership & Community</h2>
+
+        <div class="grid">
+            <app-card *ngFor="let leader of leadershipData$ | async; let i = index" class="leader-card"
+                (click)="toggleDescription(i)">
+                <div class="leader-header">
+                    <div class="leader-info">
+                        <h3>{{ leader.position }}</h3>
+                        <p class="org">{{ leader.organization }}</p>
+                    </div>
+                    <i class="fas fa-users leader-icon"></i>
+                </div>
+
+                <div class="description-container" [class.expanded]="isActive(i)">
+                    <p>{{ leader.description }}</p>
+                    <a [href]="leader.certificateUrl" target="_blank" class="cert-link" *ngIf="leader.certificateUrl"
+                        (click)="$event.stopPropagation()">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="expand-hint" *ngIf="!isActive(i)">
+                    <span>Show Details</span> <i class="fas fa-chevron-down"></i>
+                </div>
+            </app-card>
+        </div>
+    </div>
+</section>

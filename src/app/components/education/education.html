@@ -1,0 +1,33 @@
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Education</h2>
+
+        <div class="grid">
+            <app-card *ngFor="let edu of educationData$ | async; let i = index" class="edu-card-wrapper"
+                (click)="toggleCourses(i)">
+                <div class="edu-header">
+                    <img [src]="edu.logo" alt="Logo" class="logo" *ngIf="edu.logo" onerror="this.style.display='none'">
+                    <div class="edu-info">
+                        <h3>{{ edu.school }}</h3>
+                        <p class="degree">{{ edu.degree }} in {{ edu.department }}</p>
+                        <p class="dates">{{ edu.startDate }} - {{ edu.endDate }}</p>
+                    </div>
+                    <a [href]="edu.url" target="_blank" class="link-icon" (click)="$event.stopPropagation()">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+
+                <div class="courses-container" [class.expanded]="isActive(i)">
+                    <h4>Courses Taken:</h4>
+                    <ul class="courses-list">
+                        <li *ngFor="let course of edu.courses">{{ course }}</li>
+                    </ul>
+                </div>
+
+                <div class="expand-hint" *ngIf="!isActive(i)">
+                    <span>Show Courses</span> <i class="fas fa-chevron-down"></i>
+                </div>
+            </app-card>
+        </div>
+    </div>
+</section>

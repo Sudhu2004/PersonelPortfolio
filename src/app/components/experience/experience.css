@@ -1,0 +1,119 @@
+.section {
+    padding: 4rem 2rem;
+    min-height: 80vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: linear-gradient(to right, #fff, #999);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+
+/* Optional timeline line logic could go here */
+
+.exp-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background: white;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.role {
+    font-size: 1.3rem;
+    color: #fff;
+    font-weight: 600;
+}
+
+.company {
+    color: #2575fc;
+    font-weight: 500;
+}
+
+.dates {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+.skills-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.skill-tag {
+    background: rgba(37, 117, 252, 0.15);
+    color: #a0c4ff;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+.description-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.description-container.expanded {
+    max-height: 500px;
+    opacity: 1;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.description-container p {
+    line-height: 1.6;
+    color: #ddd;
+    margin-bottom: 1rem;
+}
+
+.company-link {
+    color: #2575fc;
+    font-size: 0.9rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.expand-hint {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #666;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.exp-card {
+    cursor: pointer;
+}

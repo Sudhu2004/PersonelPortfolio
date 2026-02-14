@@ -1,0 +1,99 @@
+.section {
+    padding: 4rem 2rem;
+    min-height: 80vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-align: center;
+    background: linear-gradient(to right, #ffd700, #ffb347);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.award-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    background: white;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.award-info h3 {
+    font-size: 1.4rem;
+    color: #fff;
+    margin-bottom: 0.2rem;
+}
+
+.hackathon {
+    color: #ffd700;
+    font-weight: 500;
+}
+
+.org {
+    color: #888;
+    font-size: 0.9rem;
+}
+
+.trophy-icon {
+    margin-left: auto;
+    font-size: 2rem;
+    color: #ffd700;
+    opacity: 0.3;
+}
+
+.description-container {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.description-container.expanded {
+    max-height: 300px;
+    opacity: 1;
+    padding-top: 1rem;
+    margin-top: 1rem;
+}
+
+.cert-link {
+    color: #ffd700;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.expand-hint {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.award-card {
+    cursor: pointer;
+}

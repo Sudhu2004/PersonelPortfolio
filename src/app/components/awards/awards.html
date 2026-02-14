@@ -1,0 +1,31 @@
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Honours & Rewards</h2>
+
+        <div class="grid">
+            <app-card *ngFor="let award of awardsData$ | async; let i = index" class="award-card"
+                (click)="toggleDescription(i)">
+                <div class="award-header">
+                    <img [src]="award.logo" alt="Logo" class="logo" *ngIf="award.logo"
+                        onerror="this.style.display='none'">
+                    <div class="award-info">
+                        <h3>{{ award.title }}</h3>
+                        <p class="hackathon" *ngIf="award.hackathonName">{{ award.hackathonName }}</p>
+                        <p class="org">{{ award.organization }}</p>
+                    </div>
+                    <i class="fas fa-trophy trophy-icon"></i>
+                </div>
+
+                <div class="description-container" [class.expanded]="isActive(i)">
+                    <p>{{ award.description }}</p>
+                    <a [href]="award.certificateUrl" target="_blank" class="cert-link" *ngIf="award.certificateUrl"
+                        (click)="$event.stopPropagation()">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+
+                <div class="expand-hint" *ngIf="!isActive(i)">
+                    <span>Show Details</span> <i class="fas fa-chevron-down"></i>
+                </div>
+            </app-card>
+        </div>
+    </div>
+</section>

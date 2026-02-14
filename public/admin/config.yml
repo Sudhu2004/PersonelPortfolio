@@ -1,0 +1,115 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/assets/images"
+public_folder: "/assets/images"
+
+collections:
+  - name: "home"
+    label: "Home"
+    files:
+      - name: "home"
+        label: "Home Page"
+        file: "src/assets/content/home.json"
+        fields:
+          - { label: "Name", name: "name", widget: "string" }
+          - { label: "Role", name: "role", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
+          - { label: "Socials", name: "socials", widget: "list", fields: [
+              { label: "Platform", name: "platform", widget: "string" },
+              { label: "URL", name: "url", widget: "string" },
+              { label: "Icon Class", name: "icon", widget: "string" }
+            ]}
+
+  - name: "education"
+    label: "Education"
+    files:
+      - name: "education"
+        label: "Education List"
+        file: "src/assets/content/education.json"
+        fields:
+          - { label: "Education", name: "education", widget: "list", fields: [
+              { label: "School", name: "school", widget: "string" },
+              { label: "Degree", name: "degree", widget: "string" },
+              { label: "Department", name: "department", widget: "string" },
+              { label: "Start Date", name: "startDate", widget: "string" },
+              { label: "End Date", name: "endDate", widget: "string" },
+              { label: "URL", name: "url", widget: "string" },
+              { label: "Logo", name: "logo", widget: "image" },
+              { label: "Courses", name: "courses", widget: "list" }
+            ]}
+
+  - name: "experience"
+    label: "Experience"
+    files:
+      - name: "experience"
+        label: "Experience List"
+        file: "src/assets/content/experience.json"
+        fields:
+          - { label: "Experience", name: "experience", widget: "list", fields: [
+              { label: "Company", name: "company", widget: "string" },
+              { label: "Role", name: "role", widget: "string" },
+              { label: "Start Date", name: "startDate", widget: "string" },
+              { label: "End Date", name: "endDate", widget: "string" },
+              { label: "URL", name: "url", widget: "string" },
+              { label: "Logo", name: "logo", widget: "image" },
+              { label: "Skills", name: "skills", widget: "list" },
+              { label: "Description", name: "description", widget: "text" }
+            ]}
+
+  - name: "projects"
+    label: "Projects"
+    files:
+      - name: "projects"
+        label: "Projects List"
+        file: "src/assets/content/projects.json"
+        fields:
+          - { label: "Projects", name: "projects", widget: "list", fields: [
+              { label: "Project Name", name: "name", widget: "string" },
+              { label: "URL", name: "url", widget: "string" },
+              { label: "Skills", name: "skills", widget: "list" },
+              { label: "Description", name: "description", widget: "text" }
+            ]}
+
+  - name: "skills"
+    label: "Skills"
+    files:
+      - name: "skills"
+        label: "Skills List"
+        file: "src/assets/content/skills.json"
+        fields:
+          - { label: "Skills", name: "skills", widget: "list", fields: [
+              { label: "Category", name: "category", widget: "string" },
+              { label: "Items", name: "items", widget: "list" }
+            ]}
+
+  - name: "awards"
+    label: "Awards"
+    files:
+      - name: "awards"
+        label: "Awards List"
+        file: "src/assets/content/awards.json"
+        fields:
+          - { label: "Awards", name: "awards", widget: "list", fields: [
+              { label: "Title", name: "title", widget: "string" },
+              { label: "Hackathon Name", name: "hackathonName", widget: "string" },
+              { label: "Organization", name: "organization", widget: "string" },
+              { label: "Logo", name: "logo", widget: "image" },
+              { label: "Certificate URL", name: "certificateUrl", widget: "string" },
+              { label: "Description", name: "description", widget: "text" }
+            ]}
+
+  - name: "leadership"
+    label: "Leadership"
+    files:
+      - name: "leadership"
+        label: "Leadership List"
+        file: "src/assets/content/leadership.json"
+        fields:
+          - { label: "Leadership", name: "leadership", widget: "list", fields: [
+              { label: "Organization", name: "organization", widget: "string" },
+              { label: "Position", name: "position", widget: "string" },
+              { label: "Certificate URL", name: "certificateUrl", widget: "string" },
+              { label: "Description", name: "description", widget: "text" }
+            ]}

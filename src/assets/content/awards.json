@@ -1,0 +1,12 @@
+{
+    "awards": [
+        {
+            "title": "Hackathon Winner",
+            "hackathonName": "Global Tech Hack 2024",
+            "organization": "Tech Global",
+            "logo": "/assets/images/hackathon.png",
+            "certificateUrl": "https://certificate.com/id/123",
+            "description": "Won 1st place for building an AI-powered accessibility tool."
+        }
+    ]
+}

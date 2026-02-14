@@ -1,0 +1,6 @@
+{
+    "modelName": "GEMINI",
+    "apiUrl": "https://api.openai.com/v1/chat/completions",
+    "enabled": true,
+    "systemPrompt": "You are a helpful assistant for Sudhu's portfolio."
+}

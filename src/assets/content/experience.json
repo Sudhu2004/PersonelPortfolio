@@ -1,0 +1,32 @@
+{
+    "experience": [
+        {
+            "company": "Tech Solutions Inc.",
+            "role": "Frontend Intern",
+            "startDate": "2024-05-01",
+            "endDate": "2024-08-01",
+            "url": "https://techsolutions.com",
+            "logo": "/assets/images/company-logo.png",
+            "skills": [
+                "Angular",
+                "TypeScript",
+                "SCSS"
+            ],
+            "description": "Developed responsive UI components and optimized application performance by 20%."
+        },
+        {
+            "company": "Tech Solutions Inc.",
+            "role": "Frontend Intern",
+            "startDate": "2024-05-01",
+            "endDate": "2024-08-01",
+            "url": "https://techsolutions.com",
+            "logo": "/assets/images/company-logo.png",
+            "skills": [
+                "Angular",
+                "TypeScript",
+                "SCSS"
+            ],
+            "description": "Developed responsive UI components and optimized application performance by 20%."
+        }
+    ]
+}

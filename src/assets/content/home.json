@@ -1,0 +1,22 @@
+{
+    "name": "N Sudharshan Reddy",
+    "role": "",
+    "description": "Engineer @ Azul Systems | Ex - Tally Solutions",
+    "socials": [
+        {
+            "platform": "GitHub",
+            "url": "https://github.com/Sudhu2004",
+            "icon": "fa-brands fa-github"
+        },
+        {
+            "platform": "LinkedIn",
+            "url": "https://www.linkedin.com/in/n-sudharshan-reddy/",
+            "icon": "fa-brands fa-linkedin"
+        },
+        {
+            "platform": "LeetCode",
+            "url": "https://leetcode.com/sudhu2004/",
+            "icon": "fa-brands fa-le"
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "education": [
+        {
+            "school": "University of Technology",
+            "degree": "Bachelor of Science",
+            "department": "Computer Science",
+            "startDate": "2022-08-01",
+            "endDate": "Present",
+            "url": "https://university.edu",
+            "logo": "/assets/images/university-logo.png",
+            "courses": [
+                "Data Structures & Algorithms",
+                "Web Development",
+                "Database Management Systems",
+                "Operating Systems"
+            ]
+        }
+    ]
+}

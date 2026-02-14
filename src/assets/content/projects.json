@@ -1,0 +1,14 @@
+{
+    "projects": [
+        {
+            "name": "Personal Portfolio",
+            "url": "https://github.com/sudhu2004/portfolio",
+            "skills": [
+                "Angular",
+                "Netlify CMS",
+                "TypeScript"
+            ],
+            "description": "A premium personal portfolio website with CMS integration and AI chatbot capabilities."
+        }
+    ]
+}

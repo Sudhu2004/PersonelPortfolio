@@ -1,0 +1,37 @@
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+
+        <div class="timeline">
+            <div class="timeline-item" *ngFor="let exp of experienceData$ | async; let i = index">
+                <app-card (click)="toggleDescription(i)" class="exp-card">
+                    <div class="exp-header">
+                        <img [src]="exp.logo" alt="Logo" class="logo" *ngIf="exp.logo"
+                            onerror="this.style.display='none'">
+                        <div class="exp-info">
+                            <h3>{{ exp.role }}</h3>
+                            <p class="company">{{ exp.company }}</p>
+                            <p class="dates">{{ exp.startDate }} - {{ exp.endDate }}</p>
+                        </div>
+                    </div>
+
+                    <!-- Skills visible by default -->
+                    <div class="skills-preview">
+                        <span *ngFor="let skill of exp.skills" class="skill-tag">{{ skill }}</span>
+                    </div>
+
+                    <!-- Description hidden by default -->
+                    <div class="description-container" [class.expanded]="isActive(i)">
+                        <p>{{ exp.description }}</p>
+                        <a [href]="exp.url" target="_blank" class="company-link" *ngIf="exp.url"
+                            (click)="$event.stopPropagation()">Visit Company <i class="fas fa-arrow-right"></i></a>
+                    </div>
+
+                    <div class="expand-hint" *ngIf="!isActive(i)">
+                        <span>Read More</span> <i class="fas fa-chevron-down"></i>
+                    </div>
+                </app-card>
+            </div>
+        </div>
+    </div>
+</section>

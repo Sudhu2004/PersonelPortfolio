@@ -1,0 +1,22 @@
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+
+        <div class="skills-grid">
+            <div *ngFor="let category of skillsData$ | async" class="skill-category">
+                <h3>{{ category.category }}</h3>
+                <app-card>
+                    <div class="skills-list">
+                        <div *ngFor="let item of category.items" class="skill-item">
+                            <span class="skill-name">{{ item }}</span>
+                            <div class="skill-bar">
+                                <div class="fill" style="width: 85%"></div>
+                                <!-- Static width for visual flair, could be dynamic -->
+                            </div>
+                        </div>
+                    </div>
+                </app-card>
+            </div>
+        </div>
+    </div>
+</section>

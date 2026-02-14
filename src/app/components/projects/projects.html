@@ -1,0 +1,31 @@
+<section class="section">
+    <div class="container">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="grid">
+            <app-card *ngFor="let project of projectsData$ | async; let i = index" class="project-card"
+                (click)="toggleDescription(i)">
+                <div class="project-header">
+                    <h3>{{ project.name }}</h3>
+                    <a [href]="project.url" target="_blank" class="github-link" (click)="$event.stopPropagation()">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+
+                <div class="skills-used">
+                    <span *ngFor="let skill of project.skills" class="skill-pill">{{ skill }}</span>
+                </div>
+
+                <div class="description-container" [class.expanded]="isActive(i)">
+                    <p>{{ project.description }}</p>
+                    <a [href]="project.url" target="_blank" class="view-project-btn"
+                        (click)="$event.stopPropagation()">View on GitHub</a>
+                </div>
+
+                <div class="expand-hint" *ngIf="!isActive(i)">
+                    <span>Show Details</span> <i class="fas fa-chevron-down"></i>
+                </div>
+            </app-card>
+        </div>
+    </div>
+</section>

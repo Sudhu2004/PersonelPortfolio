@@ -1,0 +1,33 @@
+{
+    "skills": [
+        {
+            "category": "Languages",
+            "items": [
+                "C++",
+                "Java",
+                "Python",
+                "TypeScript",
+                "JavaScript"
+            ]
+        },
+        {
+            "category": "Frontend",
+            "items": [
+                "Angular",
+                "React",
+                "HTML5",
+                "CSS3/SCSS",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "category": "Tools",
+            "items": [
+                "Git",
+                "Docker",
+                "VS Code",
+                "Figma"
+            ]
+        }
+    ]
+}
