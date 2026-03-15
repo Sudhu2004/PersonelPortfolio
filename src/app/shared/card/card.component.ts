@@ -1,30 +1,50 @@
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
-    selector: 'app-card',
-    standalone: true,
-    template: `
+  selector: 'app-card',
+  standalone: true,
+  template: `
     <div class="card">
       <ng-content></ng-content>
     </div>
   `,
-    styles: [`
+  styles: [`
     .card {
-      background: var(--card-bg);
-      border: 1px solid var(--border);
-      border-radius: 15px;
+      background: #ffffff;
+      border: 1px solid #dadce0;
+      border-radius: 12px;
       padding: 1.5rem;
-      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
       height: 100%;
-      backdrop-filter: blur(5px);
+
+      /* Typography */
+      font-family: "Google Sans", "Roboto", Arial, sans-serif;
+      font-size: 14px;
+      color: #202124;
+      line-height: 1.5;
+
+      transition: box-shadow 0.2s ease, transform 0.2s ease;
     }
 
     .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-      background: rgba(255, 255, 255, 0.08);
-      border-color: rgba(37, 117, 252, 0.3);
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+    }
+
+    /* Optional styling for headings inside cards */
+
+    .card h1,
+    .card h2,
+    .card h3,
+    .card h4 {
+      margin-top: 0;
+      font-weight: 600;
+      color: #202124;
+    }
+
+    .card p {
+      margin: 0.5rem 0 0 0;
+      color: #5f6368;
     }
   `]
 })
-export class CardComponent { }
+export class CardComponent {}

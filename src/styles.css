@@ -1,65 +1,84 @@
 /* Global Styles */
+
 :root {
-    --primary: #FFFF00;
-    --secondary: #87CEEB;
-    --background: #070E24;
-    --text: #ffffff;
-    --text-muted: #ccccff;
-    --card-bg: rgba(7, 14, 36, 0.05);
-    --border: rgba(255, 255, 255, 0.1);
+    /* Font sizes */
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 24px;
+  --font-size-xxl: 32px;
+
+  /* Font weights */
+  --font-regular: 400;
+  --font-medium: 500;
+  --font-bold: 700;
+
+  --text-primary: #202124;
+  --text-secondary: #5f6368;
+  --accent: #1a73e8;
+  --border: #dadce0;
+  --surface: #ffffff;
+  --surface-muted: #f1f3f4;
+  
+  --primary: #1a73e8;          /* Google blue */
+  --background: #ffffff;
+  --surface: #f8f9fa;
+  --text: #202124;
+  --text-muted: #5f6368;
+  --border: #dadce0;
+}
+
+
+.section-title{
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Inter', sans-serif;
-    background-color: var(--background);
-    color: var(--text);
-    overflow-x: hidden;
+  margin: 0;
+  font-family: "Google Sans", "Roboto", Arial, sans-serif;
+  background: var(--background);
+  color: var(--text);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
 }
 
-* {
-    box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin: 0;
-}
-
+/* Links */
 a {
-    text-decoration: none;
-    color: inherit;
+  color: var(--primary);
+  text-decoration: none;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+a:hover {
+  text-decoration: underline;
 }
 
-/* Scrollbar */
-::-webkit-scrollbar {
-    width: 8px;
+/* Cards (Google-like surfaces) */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
 }
 
-::-webkit-scrollbar-track {
-    background: var(--background);
+/* Buttons */
+button {
+  font-family: inherit;
+  border-radius: 20px;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  background: var(--surface);
+  border: 1px solid var(--border);
 }
 
-::-webkit-scrollbar-thumb {
-    background: #333;
-    border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: var(--primary);
-}
-
-.main-content {
-    padding-top: 80px;
-    /* Space for fixed header */
+button:hover {
+  background: #f1f3f4;
 }

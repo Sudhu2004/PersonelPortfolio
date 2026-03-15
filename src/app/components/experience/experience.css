@@ -8,78 +8,98 @@
     margin: 0 auto;
 }
 
+/* Section title */
+
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 3rem;
     text-align: center;
-    background: linear-gradient(to right, #fff, #999);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    color: #202124;
 }
+
+/* Timeline layout */
 
 .timeline {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1.5rem;
     position: relative;
 }
 
-/* Optional timeline line logic could go here */
+/* Header */
 
 .exp-header {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
 }
+
+/* Company logo */
 
 .logo {
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     object-fit: contain;
-    background: white;
+    background: #ffffff;
     border-radius: 8px;
-    padding: 4px;
+    padding: 5px;
+    border: 1px solid #dadce0;
 }
 
+/* Role */
+
 .role {
-    font-size: 1.3rem;
-    color: #fff;
+    font-size: 18px;
+    color: #202124;
     font-weight: 600;
 }
 
+/* Company */
+
 .company {
-    color: #2575fc;
+    color: #1a73e8;
     font-weight: 500;
+    font-size: 14px;
 }
 
+/* Dates */
+
 .dates {
-    color: #888;
-    font-size: 0.85rem;
+    color: #5f6368;
+    font-size: 13px;
 }
+
+/* Skill preview */
 
 .skills-preview {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 1rem;
+    gap: 0.4rem;
+    margin-bottom: 0.8rem;
 }
 
+/* Skill tags */
+
 .skill-tag {
-    background: rgba(37, 117, 252, 0.15);
-    color: #a0c4ff;
-    padding: 0.2rem 0.6rem;
-    border-radius: 4px;
-    font-size: 0.8rem;
+    background: #f1f3f4;
+    color: #202124;
+    padding: 4px 8px;
+    border-radius: 14px;
+    font-size: 12px;
     font-weight: 500;
+    border: 1px solid #dadce0;
 }
+
+/* Description */
 
 .description-container {
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
     opacity: 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid #dadce0;
 }
 
 .description-container.expanded {
@@ -91,28 +111,35 @@
 
 .description-container p {
     line-height: 1.6;
-    color: #ddd;
-    margin-bottom: 1rem;
+    color: #5f6368;
+    font-size: 14px;
+    margin-bottom: 0.8rem;
 }
 
+/* Company link */
+
 .company-link {
-    color: #2575fc;
-    font-size: 0.9rem;
+    color: #1a73e8;
+    font-size: 13px;
     display: inline-flex;
     align-items: center;
     gap: 5px;
 }
 
+/* Expand hint */
+
 .expand-hint {
-    margin-top: 1rem;
+    margin-top: 0.8rem;
     text-align: center;
-    font-size: 0.8rem;
-    color: #666;
+    font-size: 12px;
+    color: #5f6368;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
+    gap: 4px;
 }
+
+/* Card click */
 
 .exp-card {
     cursor: pointer;
