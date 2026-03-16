@@ -14,6 +14,21 @@
                 "Big Data Analytics",
                 "Distributed Systems"
             ]
+        },
+        {
+            "school": "Vidya Manidr IND PU College",
+            "degree": "Pre-University",
+            "department": "PCME",
+            "startDate": "2019-07-01",
+            "endDate": "2021-06-01",
+            "url": "https://vmipuc.org/",
+            "logo": "/assets/images/vmipuc-logo.png",
+            "courses": [
+                "Physics",
+                "Mathematics",
+                "Chemistry",
+                "Electronics"
+            ]
         }
     ]
 }
