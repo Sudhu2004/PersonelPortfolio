@@ -1,10 +1,28 @@
 {
     "leadership": [
         {
-            "organization": "Google Developer Student Clubs",
-            "position": "Core Team Member",
-            "certificateUrl": "https://certificate.com/gdsc",
-            "description": "Organized workshops and mentored 50+ students in web development."
+            "organization": "IEEE RIT-B Student Branch",
+            "position": "Creativity Chair",
+            "certificateUrl": "",
+            "description": "Led the Creativity Department (2024), overseeing design and branding for IEEE student branch events and coordinating creative teams for technical conferences and workshops."
+        },
+        {
+            "organization": "DECA MSRIT",
+            "position": "Core Member",
+            "certificateUrl": "",
+            "description": "I was a core member of the Department of Extracurricular Activities (DECA) at MSRIT and helped organize Karnataka Rajyotsava 2023 and 2024 as part of the creative team, and Udbhav 2024 as the Production Lead."
+        },
+        {
+            "organization": "IEEE CONNECT",
+            "position": "Stage Committee Member",
+            "certificateUrl": "",
+            "description": "Part of the stage committee for a 3-day IEEE conference at MSRIT. Assisted with stage coordination, session hall management, and registration desk operations during the event."
+        },
+        {
+            "organization": "IEEE RIT-B Student Branch",
+            "position": "Creative Vice Chair",
+            "certificateUrl": "",
+            "description": "Served as Vice Chair of the Creativity Department. Led design initiatives for the 'IEEE Odyssey 2023' event, including posters and creative installations such as themed photo booths."
         }
     ]
 }

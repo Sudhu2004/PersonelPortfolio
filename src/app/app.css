@@ -1,0 +1,42 @@
+/* ── Layout ───────────────────────────────────────────── */
+
+app-header {
+  position: relative;
+  z-index: 100;
+}
+
+.main-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Bubble container ─────────────────────────────────── */
+
+.bubble-bg {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* ── Individual bubble ────────────────────────────────── */
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(66, 133, 244, 0.06);
+  border: 1px solid rgba(66, 133, 244, 0.18);
+  filter: blur(1px);
+  box-shadow:
+    inset 0 0 8px rgba(255, 255, 255, 0.2),
+    0 0 10px rgba(66, 133, 244, 0.15);
+  animation: float infinite ease-in-out alternate;
+}
+
+/* ── Float animation ──────────────────────────────────── */
+
+@keyframes float {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(var(--tx), var(--ty)); }
+}

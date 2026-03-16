@@ -1,14 +1,28 @@
 {
     "projects": [
         {
-            "name": "Personal Portfolio",
-            "url": "https://github.com/sudhu2004/portfolio",
+            "name": "Community Management System",
+            "url": "https://github.com/Sudhu2004/CommunityApplication",
             "skills": [
-                "Angular",
-                "Netlify CMS",
-                "TypeScript"
+                "Spring Boot",
+                "PostgreSQL",
+                "REST APIs",
+                "JWT",
+                "Python"
             ],
-            "description": "A premium personal portfolio website with CMS integration and AI chatbot capabilities."
+            "description": "Built a scalable backend with Spring Boot supporting real-time messaging for 1000+ concurrent users with 50+ REST APIs, JWT authentication, role-based access control, and automated API validation."
+        },
+        {
+            "name": "Distributed File Transfer System",
+            "url": "https://github.com/Sudhu2004/File-Distribution-System",
+            "skills": [
+                "Python",
+                "TCP",
+                "UDP",
+                "Socket Programming",
+                "Multithreading"
+            ],
+            "description": "Designed a distributed file-sharing system supporting simultaneous multi-file transfers using TCP and two-phase UDP multicast with fault tolerance and admin-controlled permission-based access."
         }
     ]
 }

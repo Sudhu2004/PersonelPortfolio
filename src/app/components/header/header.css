@@ -3,10 +3,19 @@
     top: 0;
     left: 0;
     width: 100%;
-    background: #ffffff;
-    border-bottom: 1px solid #dadce0;
+    background: transparent;
+    border-bottom: none;        /* ✅ removes the line */
     z-index: 1000;
     height: 64px;
+}
+
+:host {
+  display: block;
+  background: transparent;
+}
+
+.nav {
+    background: transparent;
 }
 
 .container {
@@ -42,15 +51,19 @@
     font-size: var(--font-size-md);
     font-weight: var(--font-medium);
     padding: 8px 0;
-    transition: color 0.2s;
+    border-bottom: 2px solid transparent;   /* ✅ reserve space for underline */
+    transition: color 0.2s, border-color 0.2s;
 }
 
 .nav a:hover {
     color: #202124;
+    text-decoration: none;
 }
 
 .nav a.active {
     color: #1a73e8;
+    text-decoration: none;
+    border-bottom: 2px solid #1a73e8;       /* ✅ underline matches highlight color */
 }
 
 /* Mobile toggle */
@@ -81,8 +94,9 @@
         top: 64px;
         left: 0;
         width: 100%;
-        background: #fff;
-        border-bottom: 1px solid #dadce0;
+        background: rgba(255, 255, 255, 0.7);
+        filter: blur(10px);
+        border-bottom: none;
         display: none;
     }
 

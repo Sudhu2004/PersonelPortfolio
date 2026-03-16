@@ -1,18 +1,18 @@
 {
     "education": [
         {
-            "school": "University of Technology",
-            "degree": "Bachelor of Science",
-            "department": "Computer Science",
-            "startDate": "2022-08-01",
-            "endDate": "Present",
-            "url": "https://university.edu",
-            "logo": "/assets/images/university-logo.png",
+            "school": "Ramaiah Institute of Technology",
+            "degree": "Bachelor of Engineering",
+            "department": "Computer Science (AI & ML)",
+            "startDate": "2021-12-01",
+            "endDate": "2025-10-01",
+            "url": "https://www.msrit.edu",
+            "logo": "/assets/images/rit-logo.png",
             "courses": [
                 "Data Structures & Algorithms",
-                "Web Development",
-                "Database Management Systems",
-                "Operating Systems"
+                "Object-Oriented Programming",
+                "Big Data Analytics",
+                "Distributed Systems"
             ]
         }
     ]

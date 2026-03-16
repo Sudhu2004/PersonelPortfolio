@@ -1,32 +1,50 @@
 {
     "experience": [
         {
-            "company": "Tech Solutions Inc.",
-            "role": "Frontend Intern",
-            "startDate": "2024-05-01",
-            "endDate": "2024-08-01",
-            "url": "https://techsolutions.com",
-            "logo": "/assets/images/company-logo.png",
+            "company": "Azul Systems",
+            "role": "Quality Engineer I",
+            "startDate": "2025-03-01",
+            "endDate": "Present",
+            "url": "https://www.azul.com",
+            "logo": "/assets/images/azul-logo.png",
             "skills": [
-                "Angular",
-                "TypeScript",
-                "SCSS"
+                "Java",
+                "JTReg",
+                "Docker",
+                "OpenStack",
+                "JVM Internals"
             ],
-            "description": "Developed responsive UI components and optimized application performance by 20%."
+            "description": "Validated Virtual Threads and Prime-specific JVM enhancements using JTReg stress and regression tests. Built an LLM-assisted commit bisection tool containerized with Docker and deployed on OpenStack, reducing triage time by 90%. Debugged concurrency and runtime failures across nightly JVM builds."
         },
         {
-            "company": "Tech Solutions Inc.",
-            "role": "Frontend Intern",
-            "startDate": "2024-05-01",
-            "endDate": "2024-08-01",
-            "url": "https://techsolutions.com",
-            "logo": "/assets/images/company-logo.png",
+            "company": "Tally Solutions Pvt. Ltd.",
+            "role": "SDE Intern",
+            "startDate": "2024-10-01",
+            "endDate": "2024-12-01",
+            "url": "https://tallysolutions.com",
+            "logo": "/assets/images/tally-logo.png",
             "skills": [
-                "Angular",
-                "TypeScript",
-                "SCSS"
+                "Android",
+                "Jetpack Compose",
+                "MVVM",
+                "SQLite"
             ],
-            "description": "Developed responsive UI components and optimized application performance by 20%."
+            "description": "Built an offline-first mobile cash-flow prediction app for SMEs using Jetpack Compose and MVVM architecture with Room database, including Excel import to reduce manual data entry by 70%."
+        },
+        {
+            "company": "Yubi (Fintech)",
+            "role": "ML Intern",
+            "startDate": "2023-05-01",
+            "endDate": "2023-10-01",
+            "url": "https://www.go-yubi.com",
+            "logo": "/assets/images/yubi-logo.png",
+            "skills": [
+                "Python",
+                "LangChain",
+                "Weaviate",
+                "NLP"
+            ],
+            "description": "Built an NLP-based RAG system for financial document Q&A using LangChain and Weaviate vector database. Automated query generation using a T5 model, reducing manual testing effort by 60%."
         }
     ]
 }

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ElementRef, HostListener } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { ContentService } from '../../services/content.service';
@@ -18,7 +18,10 @@ export class ChatbotWidgetComponent implements OnInit {
   newMessage = '';
   isLoading = false;
 
-  constructor(private contentService: ContentService) { }
+  constructor(
+    private contentService: ContentService,
+    private elementRef: ElementRef
+  ) { }
 
   ngOnInit() {
     this.contentService.getAiConfig().subscribe(config => {
@@ -46,5 +49,12 @@ export class ChatbotWidgetComponent implements OnInit {
       this.isLoading = false;
       this.messages.push({ sender: 'bot', text: "I'm currently in demo mode. My API connection isn't live yet, but I'd love to chat about Sudhu's work!" });
     }, 1000);
+  }
+
+  @HostListener('document:click', ['$event'])
+  clickOutside(event: Event) {
+    if (this.isOpen && !this.elementRef.nativeElement.contains(event.target)) {
+      this.isOpen = false;
+    }
   }
 }

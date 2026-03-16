@@ -1,7 +1,23 @@
+<div class="bubble-bg" aria-hidden="true">
+  @for (b of bubbles; track b.left) {
+    <div
+      class="bubble"
+      [style.width.px]="b.size"
+      [style.height.px]="b.size"
+      [style.left]="b.left"
+      [style.top]="b.top"
+      [style.animation-duration]="b.duration"
+      [style.animation-delay]="b.delay"
+      [style.--tx]="b.tx"
+      [style.--ty]="b.ty"
+    ></div>
+  }
+</div>
+
 <app-header></app-header>
+
 <main class="main-content">
   <router-outlet></router-outlet>
-  <app-contact-form></app-contact-form>
   <br>
   <app-chatbot-widget></app-chatbot-widget>
 </main>

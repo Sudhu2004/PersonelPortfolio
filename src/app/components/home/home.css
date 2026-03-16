@@ -3,7 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 2rem;
+    padding: 3rem 2rem;
     position: relative;
     overflow: hidden;
 }
@@ -11,61 +11,85 @@
 .hero-content {
     text-align: center;
     z-index: 2;
-    max-width: 800px;
+    max-width: 850px;
 }
 
+/* Greeting */
+
 .greeting {
-    font-size: 3rem;
+    font-size: 3.2rem;
     margin-bottom: 1rem;
     font-weight: 700;
+    line-height: 1.2;
     animation: fadeInDown 1s ease-out;
 }
 
+/* Gradient highlight */
+
 .highlight {
-    background: linear-gradient(to right, #6a11cb, #2575fc);
+    background: linear-gradient(90deg, #6a11cb, #2575fc, #00c6ff);
+    background-size: 200% auto;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradientMove 6s linear infinite;
 }
 
+/* Role */
+
 .role {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: #a0a0ff;
     margin-bottom: 2rem;
+    font-weight: 500;
     animation: fadeInUp 1s ease-out 0.2s backwards;
 }
 
+/* Description */
+
 .description {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    color: #ccc;
-    margin-bottom: 2.5rem;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    color: #cfcfcf;
+    margin-bottom: 2.8rem;
     animation: fadeInUp 1s ease-out 0.4s backwards;
 }
 
+/* Social icons */
+
 .socials {
     display: flex;
-    gap: 1.5rem;
+    gap: 1.8rem;
     justify-content: center;
     margin-bottom: 3rem;
     animation: fadeInUp 1s ease-out 0.6s backwards;
 }
 
 .social-icon {
-    font-size: 2rem;
-    color: #fff;
-    transition: transform 0.3s, color 0.3s;
+    font-size: 1.8rem;
+    color: #191616;
+    background: rgba(255, 255, 255, 0.08);
+    padding: 14px;
+    border-radius: 50%;
+    border: 1px solid rgba(255,255,255,0.15);
+    transition: all 0.35s ease;
 }
 
 .social-icon:hover {
-    transform: translateY(-5px);
+    transform: translateY(-6px) scale(1.15);
     color: #2575fc;
 }
 
+/* Glow background */
+
 .glow-circle {
     position: absolute;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(37, 117, 252, 0.15) 0%, rgba(0, 0, 0, 0) 70%);
+    width: 650px;
+    height: 650px;
+    background: radial-gradient(
+        circle,
+        rgba(37, 117, 252, 0.18) 0%,
+        rgba(0, 0, 0, 0) 70%
+    );
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -73,12 +97,13 @@
     pointer-events: none;
 }
 
+/* Animations */
+
 @keyframes fadeInDown {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-25px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -88,21 +113,66 @@
 @keyframes fadeInUp {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(25px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
+@keyframes gradientMove {
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 200% center;
+    }
+}
+
+/* Tablet */
+
 @media (max-width: 768px) {
+    .greeting {
+        font-size: 2.4rem;
+    }
+
+    .role {
+        font-size: 1.25rem;
+    }
+
+    .description {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .social-icon {
+        font-size: 1.6rem;
+    }
+
+    .glow-circle {
+        width: 500px;
+        height: 500px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 480px) {
     .greeting {
         font-size: 2rem;
     }
 
     .role {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .socials {
+        gap: 1.2rem;
+    }
+
+    .glow-circle {
+        width: 350px;
+        height: 350px;
     }
 }

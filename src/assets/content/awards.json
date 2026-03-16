@@ -1,12 +1,36 @@
 {
     "awards": [
         {
-            "title": "Hackathon Winner",
-            "hackathonName": "Global Tech Hack 2024",
-            "organization": "Tech Global",
+            "title": "Second Prize",
+            "hackathonName": "Energy Transition Hackathon",
+            "organization": "Mercuria, Amphora, Curl Tech",
             "logo": "/assets/images/hackathon.png",
-            "certificateUrl": "https://certificate.com/id/123",
-            "description": "Won 1st place for building an AI-powered accessibility tool."
+            "certificateUrl": "https://drive.google.com/file/d/1r9zVTraNckJ0OjsZQCokDiJCBxiwTHPK/view",
+            "description": "Won second prize in a 4-person team among 250+ participants in a 36-hour hackathon focused on energy transition solutions."
+        },
+        {
+            "title": "Second Runner-Up",
+            "hackathonName": "TallyCodebrewers'24",
+            "organization": "Tally Solutions",
+            "logo": "/assets/images/hackathon.png",
+            "certificateUrl": "https://drive.google.com/file/d/1TjaJFBHA-bxLc3Z16aG_S1AYTIv1UgJ8/view",
+            "description": "Secured second runner-up in a 3-person team among 26,000+ students in the System Programming theme at the 48-hour TallyCodebrewers hackathon."
+        },
+        {
+            "title": "First Place",
+            "hackathonName": "Phase-Shift General Hackathon",
+            "organization": "BMS College of Engineering",
+            "logo": "/assets/images/hackathon.png",
+            "certificateUrl": "https://drive.google.com/file/d/1IA2pL-uwdD4vrmTvEeilwkYUCZ9iuqsE/view",
+            "description": "Won first place among 100+ students in the 24-hour general hackathon."
+        },
+        {
+            "title": "First Place",
+            "hackathonName": "Phase-Shift AI Hackathon",
+            "organization": "BMS College of Engineering",
+            "logo": "/assets/images/hackathon.png",
+            "certificateUrl": "https://drive.google.com/file/d/1CizB6XHFJVF-RbDfbGt6tcI1WY4927a-/view",
+            "description": "Won first place among 100+ students in the AI-focused hackathon."
         }
     ]
 }

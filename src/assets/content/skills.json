@@ -3,30 +3,50 @@
         {
             "category": "Languages",
             "items": [
-                "C++",
                 "Java",
                 "Python",
-                "TypeScript",
-                "JavaScript"
+                "C++",
+                "C",
+                "Go"
             ]
         },
         {
-            "category": "Frontend",
+            "category": "Backend & Systems",
             "items": [
-                "Angular",
-                "React",
-                "HTML5",
-                "CSS3/SCSS",
-                "Tailwind CSS"
+                "Spring Boot",
+                "REST APIs",
+                "Distributed Systems",
+                "Socket Programming",
+                "Concurrency"
             ]
         },
         {
-            "category": "Tools",
+            "category": "AI / ML",
             "items": [
-                "Git",
+                "LangChain",
+                "RAG Systems",
+                "Vector Databases",
+                "NLP"
+            ]
+        },
+        {
+            "category": "Databases",
+            "items": [
+                "PostgreSQL",
+                "MySQL",
+                "SQLite",
+                "Weaviate"
+            ]
+        },
+        {
+            "category": "Tools & Platforms",
+            "items": [
                 "Docker",
-                "VS Code",
-                "Figma"
+                "OpenStack",
+                "Git",
+                "Jenkins",
+                "Android Studio",
+                "JTReg"
             ]
         }
     ]
