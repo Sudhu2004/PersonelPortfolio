@@ -9,10 +9,16 @@
             "url": "https://www.msrit.edu",
             "logo": "/assets/images/rit-logo.png",
             "courses": [
-                "Data Structures & Algorithms",
-                "Object-Oriented Programming",
-                "Big Data Analytics",
-                "Distributed Systems"
+                "Data Structures",
+                "Algorithms",
+                "Software Engineering",
+                "DBMS",
+                "Computer Networks",
+                "Operating Systems",
+                "CPP",
+                "OOPS with Java",
+                "Machine Learning",
+                "Deep Learning"
             ]
         },
         {

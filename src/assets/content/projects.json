@@ -23,6 +23,29 @@
                 "Multithreading"
             ],
             "description": "Designed a distributed file-sharing system supporting simultaneous multi-file transfers using TCP and two-phase UDP multicast with fault tolerance and admin-controlled permission-based access."
+        },
+        {
+            "name": "Tree Tracking System",
+            "url": "https://github.com/Siddhi-Bhatt/TREE-TRACKING",
+            "skills": [
+                "Computer Vision",
+                "Deep Learning",
+                "YOLOv11",
+                "Python"
+            ],
+            "description": "Built automated pipeline using drone imagery and YOLOv11 to detect, count trees, and verify plantation claims without manual audits."
+        },
+        {
+            "name": "Network Intrusion Detection System",
+            "url": "https://github.com/Sudhu2004/Network_Intrustion_Detection_System",
+            "skills": [
+                "Python",
+                "scikit-learn",
+                "xgboost",
+                "Pandas",
+                "Numpy"
+            ],
+            "description": "Built DDoS detection system using network traffic analysis, PyShark, CICFlowMeter, and XGBoost, achieving 99% accuracy with real-time classification proactive intrusion."
         }
     ]
 }
